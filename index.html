@@ -32,6 +32,7 @@
 
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
 
 body{
@@ -105,9 +106,9 @@ a, button{
 }
 /* Hero Section */
 #home{
-    margin-top: 6rem;
-    padding: 4rem 0 !important;
+    padding: calc(4rem + 6rem) 0 4rem;
     min-height: calc(100vh - 6rem);
+    scroll-margin-top: 12rem;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -741,6 +742,7 @@ footer{
     #home{
         margin-top: auto;
         min-height: auto;
+        padding-top: 14rem;
     }
 
     .home-copy h1{
@@ -758,6 +760,10 @@ footer{
 
     section{
         scroll-margin-top: 10rem;
+    }
+
+    html{
+        scroll-padding-top: 10rem;
     }
 
     section h2{
@@ -840,7 +846,15 @@ footer{
     }
 
     section{
-        scroll-margin-top: 12rem;
+        scroll-margin-top: 14rem;
+    }
+
+    html{
+        scroll-padding-top: 14rem;
+    }
+
+    #home{
+        padding-top: 16rem;
     }
 
     section h2{
